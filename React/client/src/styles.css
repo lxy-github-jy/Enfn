@@ -1,0 +1,31 @@
+﻿:root { font-family: system-ui, sans-serif; color: #ecf0fa; background: #0b1020; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; background: radial-gradient(ellipse at 85% 10%, #26365466, transparent 50%); }
+main { max-width: 1140px; margin: auto; padding: 30px 28px; }
+header { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+header .brand { font-weight: 700; color: #f1f5ff; font-size: 19px; }
+.hero { padding: 70px 0 40px; max-width: 750px; }
+.eyebrow { font-size: 12px; letter-spacing: 2px; color: #80dfc1; font-weight: 700; }
+.hero h1.hero-title { font-size: clamp(36px, 6vw, 64px); line-height: 1.25; margin: 18px 0 22px; letter-spacing: -2px; }
+.hero-title span { color: #97b7ff; }
+.hero > p:not(.eyebrow) { color: #aab6cc; line-height: 1.9; max-width: 620px; }
+.tags { margin-top: 24px; }
+.grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 22px; }
+.grid > .card { min-width: 0; border-color: #2c3850; }
+.card h2.ant-typography { font-size: 24px; margin: 12px 0; }
+.muted, .note { color: #aab6cc; line-height: 1.8; font-size: 14px; }
+.note { font-size: 12px; margin-top: 24px; }
+.lesson-form { display: flex; gap: 8px; margin: 24px 0; align-items: flex-start; }
+.lesson-form .lesson-input { flex: 1; min-width: 0; margin-bottom: 0; }
+.lesson-row { border-bottom: 1px solid #2a3449; padding: 15px 0; overflow-wrap: anywhere; }
+.wallet-icon { font-size: 60px; color: #9ab9ff; margin: 14px 0 22px; }
+.wallet-details { margin-top: 24px; }
+.wallet-details .ant-descriptions-item-content { overflow-wrap: anywhere; }
+.feedback { margin-top: 16px; overflow-wrap: anywhere; }
+footer { color: #8191ac; font-size: 12px; padding: 28px 0; line-height: 1.8; }
+@media (max-width: 720px) {
+  .grid { grid-template-columns: 1fr; }
+  .hero { padding-top: 45px; }
+  main { padding: 22px 18px; }
+  .badge { display: none; }
+}
